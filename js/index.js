@@ -70,26 +70,6 @@ $('#page-top').click(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 動きのきっかけとなるアニメーションの名前を定義
 function fadeAnime(){
 
@@ -145,7 +125,7 @@ function delayScrollAnime() {
     var scroll = $(window).scrollTop();//スクロール値を取得
     var windowHeight = $(window).height();//画面の高さを取得
     var childs = $(this).children();  //子要素を取得
-    
+
     if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {//指定領域内にスクロールが入ったらまた親要素にクラスplayがなければ
       $(childs).each(function () {
         
