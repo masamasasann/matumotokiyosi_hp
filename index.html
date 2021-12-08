@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>matumotokiyosi</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+<!-- 一旦コメントアウト -->
+<div id="splash">
+  <div id="splash_text"></div>
+</div>
+
+<section id="head" class="wrapper">
+  <div class="head-box">
+    <h1><img src="img/logo_02.png"></h1>
+      <nav>
+        <div class="nav_flex">
+          <ul>
+            <li><a href="">商品を探す</a></li>
+            <li><a href="">お店を探す</a></li>
+            <li><a href="">イチオシ情報</a></li>
+            <li><a href="">コラム・お役立ち</a></li>
+            <li><a href="">ポイントガイド</a></li>
+            <li><a href="">マイページ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <span><img src="img/虫眼鏡.png"></span> -->
+      <div id="search-wrap">
+        <form role="search" method="get" action="">
+        <input type="text" value="" name="" id="search-text">
+        </form>
+      </div>
+  </div>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav class="globalMenuSp">
+      <ul>
+          <li><a href="">商品を探す</a></li>
+          <li><a href="">お店を探す</a></li>
+          <li><a href="">イチオシ情報</a></li>
+          <li><a href="">コラム・お役立ち</a></li>
+          <li><a href="">ポイントガイド</a></li>
+          <li><a href="">マイページ</a></li>
+      </ul>
+  </nav>
+</section>
+
+
+
+<header id="header">
+  <h2>MATUMOTO KIYOSI</h2>
+    <div id="video-area">
+      <video id="video" poster="img/Yellow Flower - 90084.mp4" webkit-playsinline playsinline muted autoplay loop>
+        <!--
+            poster：動画ファイルが利用できない環境で代替表示される画像
+            webkit-playsinline：iOS 9までのSafari用インライン再生指定
+            playsinline：iOS 10以降のSafari用インライン再生指定
+            muted：音声をミュートさせる
+            autoplay：動画を自動再生させる
+            loop：動画をループさせる
+            controls：コントロールバーを表示する
+        -->
+      <source src="img/Yellow Flower - 90084.mp4" type="video/mp4">
+      <source src="img/Yellow Flower - 90084.mp4" type="video/ogv">
+      <source src="img/Yellow Flower - 90084.mp4" type="video/webm">
+      <p>動画を再生できる環境ではありません。</p>
+      </video>
+  </div>
+</header>
+<div id="container"></div> 
+
+
+<!-- <header id="header"> -->
+  <!-- <h1>Scroll me</h1> -->
+  <div class="scrolldown4"><span>Scroll</span></div>
+<!-- </header> -->
+<!-- <div id="container">
+<p>このエリアがスクロールすると上にかぶさります</p>  -->
+<!--/container-->
+
+<!-- <footer id="footer"> -->
+  <p id="page-top"><a href="#">Page Top</a></p> 
+  
+<!-- </footer> -->
+
+<!-- NEWS -->
+<section id="NEWS" class="wrapper">
+  <div class="NEWS-wrapper">
+    <div class="box fadeUpTrigger">
+      <h3><img src="img/01_new.png"></h3>
+      <div class="NEWS-box">
+        <ul>
+          <li><a href=""><img src="img/4580101203761_t1.jfif"></a></li>
+          <li><a href=""><img src="img/4582469501695_t1.jfif"></a></li>
+          <li><a href=""><img src="img/4580321550201_t1.jfif"></a></li>
+        </ul>
+      </div>
+      <div>
+      <span class="NEWS-more"><a href="">MORE</a></span>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- campaign -->
+<section id="campaign" class="wrapper">
+  <div class="campaign-box">
+    <h4><img src="img/18_campaign.png"></h4>
+    <ul class="slider">
+      <li><a href=""><img src="img/4d71d0ac3adef935_maker_banner.jpg" alt=""></a></li>
+      <li><a href=""><img src="img/5b939886d9dd75f9_maker_banner.png" alt=""></a></li>
+      <li><a href=""><img src="img/7a609aa18edfbe4b_maker_banner.jpg" alt=""></a></li>
+      <li><a href=""><img src="img/7ea0a1e78a531159_maker_banner.jpg" alt=""></a></li>
+      <li><a href=""><img src="img/1029-1101.png" alt=""></a></li>
+      <li><a href=""><img src="img/60ad7fbbbf558c95_maker_banner.jpg" alt=""></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- recommend -->
+<section id="recommend" class="wrapper">
+  <div class="recommend-wrapper">
+    <div class="box fadeUpTrigger ">
+      <h5><img src="img/31_recommend.png"></h5>
+      <div class="recommend-box">
+        <ul>
+          <li><a href=""><img src="img/4956622110404_t1.jfif"></a></li>
+          <li><a href=""><img src="img/4955814713379_t1.jfif"></a></li>
+          <li><a href=""><img src="img/4580225390996_t1.jfif"></a></li>
+        </ul>
+      </div>
+    </div>
+    <span class="recommend-more"><a href="">MORE</a></span>
+  </div>
+</section>
+
+
+<!-- way -->
+<section id="way" class="wrapper" >
+<div class="way-box">
+  <h6>選べる3つの注文方法</h6>
+    <ul class="flex delayScroll">
+      <li class="delayScroll-box"><a href=""><img src="img/order_img_01.png"></a></li>
+      <li class="delayScroll-box"><a href=""><img src="img/order_img_02.png"></a></li>
+      <li class="delayScroll-box"><a href=""><img src="img/order_img_03.png"></a></li>
+    </ul>
+</div>
+</section>
+
+
+<!-- SALE -->
+<section id="SALE" class="wrapper">
+  <div class="SALE-box">
+    <h7><img src="img/03_sale.png"></h7>
+      <ul class="slider">
+            <li><a href=""><img src="img/4937224926723_t1.jfif" alt=""></a></li>
+            <li><a href=""><img src="img/4955814713379_t1.jfif" alt=""></a></li>
+            <li><a href=""><img src="img/4955814713386_t1.jfif" alt=""></a></li>
+            <li><a href=""><img src="img/4987107624055_t1.jfif" alt=""></a></li>
+            <li><a href=""><img src="img/4987306057791_t1.jfif" alt=""></a></li>
+            <li><a href=""><img src="img/4987443333215_t1.jfif" alt=""></a></li>
+      </ul>
+      <!-- <div class="SALE-box-more"> -->
+  <span class="SALE-box-more"><a href="">MORE</a></span>
+  <!-- </div> -->
+</div>
+
+</section>
+
+
+<section id="original" class="wrapper">
+  <div class="original-box">
+<span>マツモトキヨシのオリジナルブランド</span>
+<div><a href><img src="img/bsearch_bnr_01.png"></a></div>
+</div>
+</section>
+
+
+
+<section id="footer" class="wrapper">
+  <div class="footer-box">
+    <div class="linkList">
+      <p><a href="">商品をさがす</a></p>
+      <ul>
+        <li><a href="">医薬品・医薬部外品</a></li>
+        <li><a href="">化粧品</a></li>
+        <li><a href="">日用品</a></li>
+        <li><a href="">食品</a></li>
+      </ul>
+      <p><a href="">お店をさがす</a></p>
+      <p><a href="">イチオシ情報</a></p>
+      <ul>
+        <li><a href="">実施中のキャンペーン・セール</a></li>
+        <li><a href="">ポイントセール</a></li>
+      </ul>
+    </div>
+
+    <div class="linkList">
+      <p><a href="">コラム・お役立ち</a></p>
+      <ul>
+        <li><a href="">美容・健康押さえトク！</a></li>
+        <li><a href="">美をアップデート！知らない私に出会うBeauty CHANNEL</a></li>
+        <li><a href="">セルフメディケーションフォーラム</a></li>
+        <li></li><a href="">ビューティーサロン紹介</a></li>
+        <li><a href="">ネイルサロン Sweetie Nail</a></li>
+        <li><a href="">Beautilism</a></li>
+      </ul>
+    </div>
+
+    <div class="linkList">
+      <p><a href="">ポイントガイド</a></p>
+      <ul>
+        <li><a href="">マツモトキヨシ公式アプリ</a></li>
+        <li><a href="">マツモトキヨシ現金ポイントカード</a></li>
+        <li><a href="">マツモトキヨシメンバーズクレジットカード</a></li>
+        <li><a href="">Edy de マツキヨポイント</a></li>
+        <li><a href="">dポイント</a></li>
+        <li><a href="">Edy マイルプラス</a></li>
+        <li><a href="">現金ポイントとして使う</a></li>
+        <li><a href="">賞品と交換する</a></li>
+        <li><a href="">提携ポイントに交換</a></li>
+      </ul>
+    </div>
+
+    <div class="linkList">
+      <p><a href="">マツモトキヨシグループについて</a></p>
+      <ul>
+        <li><a href="">会社概要</a></li>
+        <li><a href="">法定公告</a></li>
+        <li><a href="">新着情報</a></li>
+      </ul>
+      <p><a href="">採用情報</a></p>
+      <p><a href="">登録型派遣採用情報</a></p>
+      <p><a href="">店舗物件募集</a></p>
+      <p><a href="">調剤サポートプログラム加盟者募集</a></p>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/index.js"></script>
+
+<!--==============JQuery読み込み===============-->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<!--IE11用※対応しなければ削除してください-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<script src="js/index.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-3/js/8-1-3.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
