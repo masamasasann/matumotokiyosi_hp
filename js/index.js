@@ -58,6 +58,7 @@ function fadeAnime(){
 }
 
 
+
 $('.slider').slick({
   arrows: false,//左右の矢印はなし
   autoplay: true,//自動的に動き出すか。初期値はfalse。
