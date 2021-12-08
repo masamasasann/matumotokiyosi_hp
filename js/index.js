@@ -10,9 +10,6 @@ $(function() {
       }
   });
 });
-
-
-
 //テキストのカウントアップ+バーの設定
 var bar = new ProgressBar.Line(splash_text, {//id名を指定
   easing: 'easeInOut',//アニメーション効果linear、easeIn、easeOut、easeInOutが指定可能
@@ -45,55 +42,8 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 });  
 
 
-// //スクロールした際の動きを関数でまとめる
-function PageTopAnime() {
-  var scroll = $(window).scrollTop();
-  if (scroll >= 200){//上から200pxスクロールしたら
-    $('#page-top').removeClass('RightMove');//#page-topについているRightMoveというクラス名を除く
-    $('#page-top').addClass('LeftMove');//#page-topについているLeftMoveというクラス名を付与
-  }else{
-    if(
-      $('#page-top').hasClass('LeftMove')){//すでに#page-topにLeftMoveというクラス名がついていたら
-      $('#page-top').removeClass('LeftMove');//LeftMoveというクラス名を除き
-      $('#page-top').addClass('RightMove');//RightMoveというクラス名を#page-topに付与
-    }
-  }
-}
-
-
-// #page-topをクリックした際の設定
-$('#page-top').click(function () {
-  $('body,html').animate({
-      scrollTop: 0//ページトップまでスクロール
-  }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
-  return false;//リンク自体の無効化
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 動きのきっかけとなるアニメーションの名前を定義
 function fadeAnime(){
-
   // ふわっ
   $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
     var elemPos = $(this).offset().top-50;//要素より、50px上の
@@ -213,3 +163,26 @@ $('.slider').slick({
 });
 
 
+// //スクロールした際の動きを関数でまとめる
+function PageTopAnime() {
+  var scroll = $(window).scrollTop();
+  if (scroll >= 200){//上から200pxスクロールしたら
+    $('#page-top').removeClass('RightMove');//#page-topについているRightMoveというクラス名を除く
+    $('#page-top').addClass('LeftMove');//#page-topについているLeftMoveというクラス名を付与
+  }else{
+    if(
+      $('#page-top').hasClass('LeftMove')){//すでに#page-topにLeftMoveというクラス名がついていたら
+      $('#page-top').removeClass('LeftMove');//LeftMoveというクラス名を除き
+      $('#page-top').addClass('RightMove');//RightMoveというクラス名を#page-topに付与
+    }
+  }
+}
+
+
+// #page-topをクリックした際の設定
+$('#page-top').click(function () {
+  $('body,html').animate({
+      scrollTop: 0//ページトップまでスクロール
+  }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+  return false;//リンク自体の無効化
+});
