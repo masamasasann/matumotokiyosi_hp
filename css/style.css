@@ -402,6 +402,8 @@ h3 img{
   top: 40px;
   right: 100px;
   width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .box ul{
