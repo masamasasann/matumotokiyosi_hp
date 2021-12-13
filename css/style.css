@@ -404,6 +404,12 @@ h3 img{
   width: 70%;
 }
 
+.NEWS-box ul{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
 .box ul{
   position: absolute;
   top: 0px;
