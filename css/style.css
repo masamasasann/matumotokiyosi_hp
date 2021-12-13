@@ -1074,7 +1074,9 @@ h3 {
   position: absolute;
   top: 40px;
   right: 50px;
-  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .box li{
