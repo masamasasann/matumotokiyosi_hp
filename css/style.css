@@ -1124,7 +1124,7 @@ h4 img{
 
 
 .recommend-wrapper{
-  position: relative;
+  /* position: relative; */
   width: 100%;
   max-width: 768px;
   height: 300px;
@@ -1148,9 +1148,9 @@ h5 img{
 
 .recommend-box {
   width: 70%;
-  position: absolute;
+  /* position: absolute;
   top: 40px;
-  right: 50px;
+  right: 50px; */
 }
 
 .recommend-box li img{
