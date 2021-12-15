@@ -1070,13 +1070,10 @@ h3 {
 }
 
 .NEWS-box {
-  width: 70%;
-  position: absolute;
+  width: 100%;
+  /* position: absolute;
   top: 40px;
-  right: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  right: 50px; */
 }
 
 .box li{
