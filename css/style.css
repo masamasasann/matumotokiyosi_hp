@@ -1061,7 +1061,7 @@ h3 {
   width: 100%;
 }
 .NEWS-wrapper {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   max-width: 768px;
   height: 280px;
