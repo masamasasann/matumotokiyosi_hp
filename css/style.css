@@ -1135,9 +1135,9 @@ h4 img{
 
 h5 {
   display: inline-block; 
-  position: absolute; 
+  /* position: absolute; 
   top: -50px;
-  left: 0px;
+  left: 0px; */
   padding: 20px;
   width: 100%;
 }
@@ -1147,7 +1147,7 @@ h5 img{
 }
 
 .recommend-box {
-  width: 70%;
+  width: 100%;
   /* position: absolute;
   top: 40px;
   right: 50px; */
