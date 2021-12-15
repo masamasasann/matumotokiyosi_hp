@@ -1054,9 +1054,9 @@ nav.globalMenuSp.active {
 }
 h3 {
   display: inline-block; 
-  position: absolute; 
+  /* position: absolute; 
   top: -50px;
-  left: 0px;
+  left: 0px; */
   padding: 20px;
   width: 100%;
 }
